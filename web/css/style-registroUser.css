@@ -1,0 +1,106 @@
+main{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+#email1{
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid aqua;
+    background-color: white;
+    border-radius: 10px;
+}
+#emailIntro{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+}
+#emailIntro input{
+    width: 70%
+}
+#emailIntro button{
+    margin-right: 5px;
+}
+#muestra_valido{
+    height: 30px;
+    width: 30px;
+}
+#email2{
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid aqua;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+#muestra_valido2{
+    height: 30px;
+    width: 30px;
+    display: inline;
+}
+#muestra_valido2 .spinner,#muestra_valido2 .email-check,#muestra_valido2 .email-error{
+    width: 20px;
+    height: 20px;
+}
+.desaparece{
+    display: none;
+}
+.aparece{
+    display: flex;
+}
+.email-check{
+    height: 100%;
+    width: 100%;
+    color: green;
+    font-size: 1.5em;
+    text-align: center;
+}
+.email-error{
+    height: 100%;
+    width: 100%;
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+}
+.spinner{
+    height: 100%;
+    width: 100%;
+}
+.a2{
+    border-color: white;
+    border-style: none;
+    border-bottom:2px solid aqua;
+}
+form .a2{
+    margin-bottom: 20px;
+}
+.b{
+    border-color: white;
+    border-style: none;
+    border-bottom:2px solid red;
+    margin-bottom: 20px;
+}
+.centradoa{
+    text-align: center;
+}
+.apartadoRegisBonito{
+    width: 100%;
+    text-align: center;
+}
+.apartadoRegisBonitoEsp{
+    margin-top: 10px
+}

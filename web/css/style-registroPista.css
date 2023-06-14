@@ -1,0 +1,138 @@
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+#formulario{
+    border: 5px solid aqua;
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+#iconoVolverRegPista{
+    cursor: pointer;
+    color: orange;
+    font-size: 27px;
+}
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 0;
+}
+legend{
+    font-family: 'Laila', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.a{
+    border-color: white;
+    border-style: none;
+    border-bottom:2px solid aqua;
+    margin-bottom: 20px;
+}
+.b{
+    border-color: white;
+    border-style: none;
+    border-bottom:2px solid red;
+    margin-bottom: 20px;
+}
+.apartado{
+    width: 50%;
+    padding: 20px;
+}
+.apartado input{
+    width: 400px;
+}
+.anadidos{
+    border-right: 2px solid black;
+}
+#caja-envia{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    height: 30px;
+}
+.email-check{
+    height: 20px;
+    width: 20px;
+    color: green;
+}
+.email-error{
+    height: 20px;
+    width: 20px;
+    color: red;
+}
+.spinner{
+    height: 20px;
+    width: 20px;
+}
+.linea{
+    display: inline;
+}
+.bonito{
+    padding-left: 60px
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media only screen and ( max-width: 1782px){
+    .apartado input{
+        width: 350px;
+    }
+}
+
+@media only screen and ( max-width: 1615px){
+    .apartado input{
+        width: 300px;
+    }
+}
+
+@media only screen and ( max-width: 1449px){
+    .apartado input{
+        width: 250px;
+    }
+}
+
+@media only screen and ( max-width: 1281px){
+    .apartado input{
+        width: 200px;
+    }
+}
+
+@media only screen and ( max-width: 1139px){
+    #formulario{
+        width: 675px;
+    }
+}
+
+@media only screen and ( max-width: 677px){
+    .apartado input{
+        width: 180px;
+    }
+}
+
+@media only screen and ( max-width: 635px){
+    .apartado input{
+        width: 150px;
+    }
+}
+@media only screen and ( max-width: 576px){
+    .apartado input{
+        width: 130px;
+    }
+}

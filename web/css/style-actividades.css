@@ -1,0 +1,568 @@
+main{
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+#cajaActividades{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+#tituloPrincipal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#tituloPrincipal h1{
+    width: 30%;
+    font-size: 80px;
+    text-decoration: underline;
+}
+
+/*Parte de las actividades*/
+#contInstalaciones{
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../img/siluetaTenisSinFondo.png");
+    background-position-x: 500px;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+}
+
+@media only screen and ( max-width: 1043px){
+    #contInstalaciones{
+        background-image: url("");
+    }
+}
+
+#listasPistas{
+    width: 40%;
+    height: 100%;
+    text-align: justify;
+    padding: 10px;
+    overflow: auto;
+}
+
+#conFotosPistasAct{
+    width: 40%;
+    border: 2px solid black;
+    height: auto;
+}
+
+.imagenPrevias{
+    float: left;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+@media only screen and ( max-width: 1100px){
+    #conFotosPistasAct{
+        width: 50%;
+    }
+}
+
+@media only screen and ( max-width: 882px){
+    #contInstalaciones{
+        justify-content: space-between;
+    }
+    #conFotosPistasAct{
+        width: 60%;
+    }
+}
+
+@media only screen and ( max-width: 832px){
+    #contInstalaciones{
+        padding: 0;
+    }
+}
+
+/*Creacion de equipos*/
+#creacionEquipos{
+    width: 100%;
+    height: 550px;
+    border: 2px solid rgb(0, 212, 240);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#cajaJugadores{
+    width: 30%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+#cajaJugadores p{
+    width: 40%;
+    text-align: center;
+    height: 7%;
+}
+
+#cajaJugadores p:hover,#listaEquipos li:hover{
+    background-color: rgb(187, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cajaAgregacion,#cajaAgregacionEquipo{
+    width: 30%;
+    height: auto;
+}
+
+#cajaAgregacionEquipo{
+    background-color: white;
+}
+
+#cajaAgregacion{
+    background-image: url("../img/siluetaBaloncesto.png");
+    background-position-y: 225px;
+    background-position-x: 120px;
+    background-repeat: no-repeat;
+}
+
+#btn_limpiarJugadores,#btn_limpiarEquipos{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*Parte en medio*/
+#jugador,#equipo{
+    border: 2px solid rgb(0, 212, 240);
+    margin-bottom: 10px;
+}
+
+.cajaOpcSorteo,.cajaOpcEquipo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cajaOpcSorteo button,.cajaOpcEquipo button{
+    width: 30%;
+    height: 80%;
+}
+
+.cajaOpcSorteo p,.cajaOpcEquipo p{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+/*caja final*/
+#cajaFinalEquipos{
+    width: 30%;
+    height: 100%;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#cajaFinalEquipos ul{
+    list-style: none;
+    padding: 0;
+    width: 50%;
+}
+
+#cajaFinalEquipos li{
+    text-align: center;
+}
+
+#listaEquipo1{
+    border-right: 2px solid rgb(0, 212, 240);
+}
+
+@media only screen and ( max-width: 1330px){
+    #cajaJugadores p{
+        width: 100%;
+    }
+}
+
+@media only screen and ( max-width: 1500px){
+    #cajaFinalEquipos ul{
+        width: 100%;
+    }
+    #listaEquipo1{
+        border: none;
+    }
+    #listaEquipo2{
+        border-top: 2px solid rgb(0, 212, 240);
+    }
+}
+
+@media only screen and ( max-width: 955px){
+    #cajaFinalEquipos{
+        padding: 0;
+        padding-top: 30px;
+    }
+}
+
+@media only screen and ( max-width: 1000px){
+    .cajaOpcSorteo{
+        height: 110px;
+    }
+
+    .cajaOpcSorteo button{
+        height: 40%;
+        width: 70px;
+    }
+
+    .cajaOpcSorteo p{
+        height: 60%;
+        width: 100%;
+        padding: 2px;
+    }
+}
+
+/*creacion de torneos*/
+
+#contTorneos{
+    width: 100%;
+    height: 500px;
+    border: 2px solid rgb(0, 212, 240);
+    border-radius: 10px;
+    background-image: url("../img/siluetaFurboCambiada.png");
+    background-position-x: 700px;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+@media only screen and ( max-width: 1180px){
+    #contTorneos{
+        background-image: url("");
+    }
+}
+
+#listaEquipos{
+    width: 30%;
+    height: 330px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+}
+
+#listaParte1,#listaParte2{
+    width: 40%;
+    list-style: none;
+    padding: 0;
+}
+
+#listaParte1 li,#listaParte2 li{
+    text-align: center;
+}
+
+@media only screen and ( max-width: 1013px){
+    #cajaAgregacionEquipo{
+        width: 50%;
+    }
+    #listaEquipos{
+        width: 40%;
+    }
+    #listaParte1{
+        width: 100%;
+    }
+    #listaParte2{
+        width: 100%;
+    }
+}
+
+@media only screen and ( max-width: 660px){
+    .cajaOpcEquipo{
+        height: 60px;
+    }
+
+    .cajaOpcEquipo button{
+        height: 40%;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cajaOpcEquipo p{
+        width: 100%;
+    }
+}
+
+/*Parte de liga*/
+
+#OpcionLigaContenedor{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    padding: 10px;
+}
+
+.sive{
+    display: flex;
+}
+
+#tablaLiga{
+    width: 60%;
+}
+
+table,th,td{
+    border: 2px solid rgb(0, 212, 240);
+    border-collapse: collapse;
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+#cajaResultadosLiga{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.encuentro{
+    width: 475px;
+    height: 110px;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.resultadoEncuentro{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 212, 240);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultadoEncuentro button{
+    width: 20%;
+}
+
+.resultadoEncuentro input{
+    width: 25px;
+}
+
+.equipo1Liga,.equipo2Liga{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+#contTotal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+#totalEncuentros{
+    width: 10%;
+}
+
+#diceGanador{
+    width: 10%;
+}
+
+/*Parte de playoff*/
+
+#OpcionPlayofContenedor{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#contPlayofResult{
+    width: 1650px;
+    height: auto;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+}
+
+.equipoRestantePlayof{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(126, 211, 250);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+}
+
+.equipoGanadorPlayof{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid rgb(126, 211, 250);
+    width: 300px;
+    height: 100px;
+    margin: 50px;
+    font-size: 30px;
+}
+
+.equipoGanadorPlayof h1{
+    width: 100%;
+    text-align: center;
+}
+
+.equipoRestantePlayof button{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 100%;
+}
+
+#contPlayofResult ul{
+    list-style: none;
+}
+
+.tituloAct{
+    width: 100%;
+    text-align: center;
+    border-bottom:5px solid rgb(138, 138, 138);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-family: 'Laila', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.tituloAnadido{
+    width: 100%;
+}
+
+.tituloAnadido h6{
+    font-size: 25px;
+    position: relative;
+}
+
+.tituloAnadido h6 a{
+    font-size: 13px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.fondoVerde{
+    background-color: rgb(210, 255, 206);
+}
+
+.fondoRojo{
+    background-color: rgb(255, 154, 154);
+}
+
+@media only screen and ( max-width: 677px){
+    main{
+        padding: 0;
+    }
+    #tituloPrincipal h1{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#cajaImagen{
+    background-color: rgba(220, 220, 220, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+#xImg{
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+}
+
+#xImg i{
+    font-size: 30px;
+}
+
+#cajaImagenPrueba {
+    width: 800px;
+    height: 600px;
+}
+
+#cajaImagenPrueba img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and ( max-width: 1473px){
+    #tablaLiga{
+        width: 100%;
+    }
+}
+
+#filaEspLiga{
+    background-color: rgb(200, 255, 255);
+}
+
+.elegidoListaSub{
+    text-decoration: underline;
+    background-color: rgb(187, 255, 255);
+}

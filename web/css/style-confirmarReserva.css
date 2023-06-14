@@ -1,0 +1,76 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 5%;
+    height: auto;
+    width: 100%;
+}
+#cuerpito{
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Laila', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+table,th,td{
+    border: 2px solid rgb(0, 212, 240);
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+.fondoAzulTabla{
+    background-color: rgb(200, 255, 255);
+    font-weight: bold;
+}
+#cajita1{
+    width: 15%;
+    text-align: center;
+}
+#cajita1 form{
+    margin-bottom: 5px;
+}
+#cajita2{
+    width: 80%;
+}
+#iconoVolverReserva{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: orange;
+    font-size: 40px;
+}
+@media only screen and ( max-width: 825px){
+    main{
+        padding: 0;
+    }
+}
+@media only screen and ( max-width: 705px){
+    #cuerpito{
+        width: 100%;
+    }
+}
+@media only screen and ( max-width: 576px){
+    #cajita2{
+        margin-top: 40px;
+        width: 100%;
+    }
+    h1{
+        margin-bottom: 30px;
+    }
+}

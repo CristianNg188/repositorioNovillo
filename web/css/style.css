@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+/*Parte del header*/
+#cabecera {
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#circulo{
+    width: 325px;
+    height: 325px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#inicioSesion,#sesionUser {
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-image: url("../img/fondoSesion.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    transition: box-shadow 0.5s;
+    z-index: 2;
+}
+
+#opcionesUser{
+    padding-left: 0;
+    position:absolute;
+    top: 80px;
+    right: 30px;
+    list-style: none;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#opcionesUser li{
+    background-color: rgb(106, 106, 224);
+    border: 2px solid rgb(11, 218, 255);
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#opcionesUser li:hover{
+    background-color: rgb(66, 66, 226);
+}
+
+#opcionesUser li a{
+    text-decoration: none;
+    color: white;
+}
+
+#opcionesUser.aparece li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.efectoInicio:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+#inicioSesion:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+}
+
+#textoSesion {
+    width: 170px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icSesion {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/*Parte del nav*/
+nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    width: 335px;
+    padding: 10px;
+    background-color: rgb(214, 214, 214);
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    transition: font-size 1s;
+}
+
+#navSele{
+    background-color: aquamarine;
+}
+
+.navNoSele:hover {
+    background-color: aquamarine;
+    font-size: 20px;
+}
+
+nav i{
+    margin-right: 5px;
+}
+
+@media only screen and ( max-height: 590px){
+    nav{
+        height: 30px;
+    }
+}
+
+/*Pie de pagina*/
+footer{
+    width: 100%;
+    height: auto;
+    border-top: 4px solid rgb(255, 102, 0);
+    border-bottom: 4px solid rgb(255, 102, 0);
+    background-color: #616161;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: white;
+}
+
+footer h5{
+    width: 100%;
+    text-align: center;
+}
+
+#copy{
+    width: 20%;
+    height: auto;
+}
+
+#copy img{
+    width: 100%;
+    height: 40%;
+}
+
+#infoFooter{
+    width: 100%;
+    height: 70%;
+}
+
+#infoFooter p{
+    text-align: center;
+}
+
+#infoFooter a{
+    margin: 5px;
+    color: white;
+}
+
+@media only screen and ( max-width: 770px){
+    #copy{
+        width: 40%;
+    }
+}
+
+
+/*Parte del inicio de sesion*/
+fieldset {
+    padding:10px;
+}
+
+#x{
+    position: relative;
+    left: 60%;
+    bottom: 5%;
+}
+
+.ve{
+    background-color: rgba(220, 220, 220, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+#FormSesion {
+    text-align: center;
+    background-color: #D7D6D6;
+    width: 500px;
+    height: 500px;
+    padding: 40px 60px 30px 60px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#FormSesion h1{
+    font-family: 'Laila', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#modEspInputIndex{
+    margin-bottom: 50px;
+}
+
+#errorInicioSesion{
+    color: red;
+    background-color: rgb(214, 160, 160);
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Predeterminados*/
+
+.fondoAzul{
+    background-image: linear-gradient(200deg, rgb(39, 54, 111), rgb(60, 129, 141));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.nove{
+    display: none;
+}
+
+.punteroRaton{
+    cursor: pointer;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and ( max-width: 1875px){
+    nav a{
+        width: 325px;
+    }
+}
+
+@media only screen and ( max-width: 1843px){
+    #circulo{
+        width: 300px;
+        height: 300px;
+    }
+    #cabecera{
+        height: 225px;
+    }
+}
+
+@media only screen and ( max-width: 1813px){
+    nav a{
+        width: 314px;
+    }
+}
+
+@media only screen and ( max-width: 1758px){
+    nav a{
+        width: 307px;
+    }
+}
+
+@media only screen and ( max-width: 1740px){
+    nav a{
+        width: 300px;
+    }
+}
+
+@media only screen and ( max-width: 1700px){
+    nav a{
+        width: 290px;
+    }
+}
+
+@media only screen and ( max-width: 1660px){
+    #circulo{
+        width: 290px;
+        height: 290px;
+    }
+    #cabecera{
+        height: 215px;
+    }
+}
+
+@media only screen and ( max-width: 1640px){
+    nav a{
+        width: 280px;
+    }
+}
+
+@media only screen and ( max-width: 1590px){
+    #circulo{
+        width: 265px;
+        height: 265px;
+    }
+    #cabecera{
+        height: 190px;
+    }
+    nav a{
+        width: 275px;
+    }
+}
+
+@media only screen and ( max-width: 1550px){
+    nav a{
+        width: 265px;
+    }
+}
+
+@media only screen and ( max-width: 1520px){
+    nav a{
+        width: 260px;
+    }
+}
+
+@media only screen and ( max-width: 1480px){
+    nav a{
+        width: 255px;
+    }
+}
+
+@media only screen and ( max-width: 1450px){
+    nav a{
+        width: 248px;
+    }
+}
+
+@media only screen and ( max-width: 1420px){
+    #circulo{
+        width: 250px;
+        height: 250px;
+    }
+    #cabecera{
+        height: 175px;
+    }
+    nav a{
+        width: 240px;
+    }
+}
+
+@media only screen and ( max-width: 1380px){
+    nav a{
+        width: 234px;
+    }
+}
+
+@media only screen and ( max-width: 1350px){
+    #circulo{
+        width: 235px;
+        height: 235px;
+    }
+    #cabecera{
+        height: 160px;
+    }
+    nav a{
+        width: 230px;
+    }
+}
+
+@media only screen and ( max-width: 1320px){
+    nav a{
+        width: 226px;
+    }
+}
+
+@media only screen and ( max-width: 1300px){
+    nav a{
+        width: 220px;
+    }
+}
+
+@media only screen and ( max-width: 1265px){
+    #circulo{
+        display: none;
+    }
+    #cabecera{
+        background-image: url("../img/tamanosHeader/DEPORT1.png");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 160px;
+    }
+    nav a{
+        width: 20%;
+    }
+    #inicioSesion,#sesionUser {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    #icSesion{
+        height: 40px;
+    }
+    #opcionesUser{
+        top: 55px;
+        right: 15px;
+    }
+}
+
+@media only screen and ( max-width: 853px){
+    #cabecera{
+        background-image: url("../img/tamanosHeader/DEPORT2.png");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and ( max-width: 676px){
+    #cabecera{
+        background-image: url("../img/tamanosHeader/DEPORT3.png");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    nav {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        width: 100%;
+    }
+}
+
+/*Parte de mensajes emergentes*/
+#cajaContMensErr{
+    background-color: rgba(220, 220, 220, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+#cajaMensajeErr{
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 212, 240);
+}
+
+.mensajeErrGenerico{
+    font-size: 20px
+}

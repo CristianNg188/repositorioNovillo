@@ -1,0 +1,174 @@
+main{
+    width: 100%;
+    height: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+#caja{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+/*1 parte de la caja*/
+#parte1{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+/*1 parte*/
+#personal{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#datosImagen{
+    width: 33%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#yo{
+    width: 60%;
+    height: 80%;
+}
+
+#datosImagen ul{
+    width: 40%;
+    height: 50%;
+    list-style: none;
+}
+
+#datosImagen a{
+    width: 100%;
+}
+
+.silueta{
+    width: 20%;
+    height: 70%;
+}
+
+#lenguajes{
+    width: 33%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lenguajes h5{
+    font-size: 17px;
+}
+
+/*2 parte*/
+#descr{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloqueDesc{
+    width: 32%;
+    padding: 10px;
+}
+
+#descr img{
+    width: 20%;
+    height: 70%;
+}
+
+/*2 parte de la caja*/
+#parte2{
+    width: 40%;
+    text-align: center;
+    color: blue;
+}
+
+#contIframe{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    border: 5px solid grey;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and ( max-width: 1620px){
+    #parte2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #parte2 p{
+        width: 100%;
+    }
+    #parte1{
+        width: 100%;
+    }
+    #caja{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #contIframe{
+        height: 400px;
+        width: 400px;
+        margin-left: 30px;
+    }
+    #lenguajes h5{
+        width: 100%;
+    }
+}
+@media only screen and ( max-width: 1010px){
+    main{
+        padding: 0;
+    }
+}
+@media only screen and ( max-width: 846px){
+    .silueta{
+        display: none;
+    }
+    #datosImagen,#lenguajes,.bloqueDesc{
+        width: 50%;
+    }
+    #lenguajes,#bloqueEspc{
+        border-left: 2px solid rgb(53, 181, 212);
+    }
+    #lenguajes h5{
+        height: 10px;
+    }
+    #parte1{
+        height: auto;
+    }
+}
+
+@media only screen and ( max-width: 677px){
+    #caja{
+        padding: 0;
+    }
+}
+@media only screen and ( max-width: 587px){
+    #parte1{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+}

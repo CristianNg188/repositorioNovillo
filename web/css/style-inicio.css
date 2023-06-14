@@ -1,0 +1,461 @@
+/*Carrousel ;)*/
+.carousel{
+    height: 670px;
+    background-image: url("../img/fondoCarrusel.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel img{
+    height: 670px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+#flecha1,#flecha2{
+    background-color: rgb(121, 121, 121);
+}
+
+#btn1,#btn2,#btn3,#btn4{
+    background-color: white;
+}
+
+@media only screen and ( max-width: 1450px){
+    .carousel{
+        height: 600px;
+    }
+    .carousel img{
+        height: 600px;
+    }
+}
+
+@media only screen and ( max-width: 1230px){
+    .carousel{
+        height: 500px;
+    }
+    .carousel img{
+        height: 500px;
+    }
+}
+
+@media only screen and ( max-width: 1078px){
+    .carousel{
+        height: 400px;
+    }
+    .carousel img{
+        height: 400px;
+    }
+}
+
+@media only screen and ( max-width: 850px){
+    .carousel{
+        height: 300px;
+    }
+    .carousel img{
+        height: 300px;
+    }
+}
+
+@media only screen and ( max-width: 736px){
+    #flecha1,#flecha2{
+        width: 10%;
+    }
+    .carousel img{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media only screen and ( max-width: 676px){
+    .carousel{
+        height: 350px;
+    }
+    .carousel img{
+        height: 350px;
+    }
+    #flecha1,#flecha2{
+        width: 5%;
+    }
+    .carousel img{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media only screen and ( max-width: 577px){
+    .carousel{
+        height: 270px;
+    }
+    .carousel img{
+        height: 270px;
+    }
+}
+/*apartado main*/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cajitaA{
+    width: 15%;
+    height: 300px;
+    padding: 20px;
+    position: sticky;
+    top: 50vh;
+}
+
+.cajitaA img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and ( max-width: 1325px){
+    .cajitaA{
+        width: 15%;
+        height: 200px;
+    }
+}
+
+@media only screen and ( max-width: 1017px){
+    .cajitaA{
+        width: 15%;
+        height: 150px;
+    }
+}
+
+#contSections{
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+}
+
+@media only screen and ( max-width: 776px){
+    .cajitaA{
+        display: none;
+    }
+    #contSections{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+.tituloSection{
+    width: 100%;
+    text-align: center;
+    border-bottom:5px solid rgb(138, 138, 138);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-family: 'Laila', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/*Parte de noticias*/
+#contTexto{
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+#contNoticias{
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#noti1{
+    width: 30%;
+    height: 300px;
+    text-align: center;
+}
+
+#conPar{
+    width: 60%;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#conPar article{
+    width: 100%;
+    height: 100px;
+}
+
+.notis{
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+@media only screen and ( max-width: 1805px){
+    .notis{
+        width: 100%;
+    }
+    
+}
+
+.notis img{
+    width: 40%;
+    height: 100%;
+}
+
+.notis article{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and ( max-width: 1725px){
+    .notis{
+        justify-content: space-between;
+    }
+    .notis article{
+        width: 33%;
+    }
+}
+
+@media only screen and ( max-width: 1656px){
+    #contNoticias{
+        width: 90%;
+    }
+}
+
+.notis h6{
+    font-size: 13px;
+}
+
+#noticias{
+    margin-bottom: 0;
+}
+
+article{
+    border: 2px solid rgb(107, 107, 107);
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+#noticias article:hover{
+    cursor: pointer;
+    border: 3px solid rgb(0, 135, 212);
+}
+
+article img{
+    border-radius: 5px;
+}
+
+h6{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+#noti1 img{
+    width: 100%;
+    height: 50%;
+}
+
+#conPar img{
+    width: 40%;
+    height: 100%;
+}
+
+.TextoNoticiaLao,.TextoNoticiaLaoNuevo{
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+
+.TextoNoticiaLao p{
+    font-size: 14px;
+}
+
+.TextoNoticiaLaoNuevo p{
+    font-size: 10px;
+}
+@media only screen and ( max-width: 1493px){
+    #noti1 p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and ( max-width: 1439px){
+    #contNoticias{
+        width: 100%;
+    }
+}
+
+@media only screen and ( max-width: 1314px){
+    #conPar article p{
+        font-size: 13px;
+    }
+    #contNoticias{
+        height: auto;
+    }
+    .notis{
+        height: auto;
+    }
+    .notis article{
+        width: 100%;
+        height: 100px;
+    }
+    .notis article h6{
+        font-size: 18px;
+    }
+    .notis article p{
+        font-size: 14px;
+    }
+    .notis img{
+        width: 30%;
+    }
+}
+
+@media only screen and ( max-width: 1238px){
+    #conPar article{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media only screen and ( max-width: 1028px){
+    #noti1{
+        width: 40%;
+        height: 300px;
+    }
+}
+
+@media only screen and ( max-width: 856px){
+    #conPar{
+        padding: 0;
+    }
+    #noticias{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and ( max-width: 776px){
+    #noticias{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/*Parte de opciones*/
+
+#opciones article{
+    height: 400px;
+    width: 20%;
+    padding: 15px;
+    transition: width 1s;
+}
+
+#opciones article:hover{
+    width: 30%;
+    cursor: pointer;
+}
+
+.contOpciones{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.contOpciones p{
+    font-size: 15px;
+}
+
+#opcion1{
+    background-color: rgb(158, 0, 0);
+}
+
+#opcion1 h1{
+    text-decoration: underline;
+}
+
+#opcion1 .contOpciones {
+    background-color: rgb(165, 124, 124);
+}
+
+#opcion2{
+    background-color: rgb(3, 0, 167);
+}
+
+#opcion2 .contOpciones {
+    background-color: rgb(98, 97, 163);
+}
+
+#opcion2 .contOpciones p{
+    font-size: 13px;
+}
+
+#opcion2 h1{
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+#opcion3{
+    background-color: rgb(0, 73, 12);
+}
+
+#opcion3 .contOpciones {
+    background-color: rgb(112, 129, 115);
+}
+
+#opcion3 h1{
+    text-decoration: underline;
+}
+
+@media only screen and ( max-width: 1901px){
+    #opciones article{
+        width: 30%;
+    }
+    #opciones article:hover{
+        width: 40%;
+    }
+}
+
+@media only screen and ( max-width: 1331px){
+    #opciones article:hover{
+        border: 3px solid rgb(0, 135, 212);
+        width: 100%;
+    }
+    #opciones{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    #opciones article{
+        height: auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,93 @@
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+#cajaListaReservas{
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 300px;
+}
+#iconoVolverLisReservas{
+    cursor: pointer;
+    color: orange;
+    font-size: 27px;
+}
+#busqueda{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#busqueda h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Laila', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#parte1{
+    width:60%; 
+    font-size: 17px;
+}
+#parte2{
+    width:20%; 
+}
+#parte2 button{
+    height: 38px;
+}
+table,th,td {
+    border: 2px solid rgb(0, 212, 240);
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fondoAzulTabla{
+    background-color: rgb(200, 255, 255);
+    font-weight: bold;
+}
+.borrar {
+    cursor: pointer;
+    margin-right: 30%;
+}
+.verDetalle {
+    cursor: pointer;
+}
+@media only screen and ( max-width: 944px){
+    #cajaListaReservas{
+        width: 90%;
+    }
+}
+@media only screen and ( max-width: 840px){
+    #parte1{
+        width:70%; 
+        font-size: 15px;
+    }
+}
+@media only screen and ( max-width: 700px){
+    #cajaListaReservas{
+        width: 98%;
+    }
+}
+@media only screen and ( max-width: 646px){
+    #parte1{
+        width:100%; 
+    }
+    #parte2{
+        width:100%; 
+    }
+}

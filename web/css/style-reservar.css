@@ -1,0 +1,66 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.cogido{
+    background-color: red;
+    cursor: not-allowed;
+}
+.libre{
+    background-color: green;
+    cursor: pointer;
+}
+.posible{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+table,th,td{
+    border-collapse: collapse;
+    text-align: center;
+    padding: 4px;
+    border: 2px solid rgb(0, 212, 240);
+}
+table{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#muestra{
+    width: 150px;
+    height: 150px
+}
+div input{
+    width: 70%;
+}
+
+.fondoAzulTabla{
+    background-color: rgb(200, 255, 255);
+    font-weight: bold;
+}
+
+@media only screen and ( max-width: 1294px){
+    #contFecha{
+        margin-top: 30px;
+    }
+    table{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and ( max-width: 594px){
+    table{
+        width: 100%;
+    }
+    table,th,td{
+        padding: 0px;
+        font-size: 15px
+    }
+}
